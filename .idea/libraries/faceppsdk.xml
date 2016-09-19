@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="faceppsdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/libs/faceppsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

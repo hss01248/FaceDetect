@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">人脸检测</string>
+    <string name="title_track">人脸追踪</string>
+    <string name="title_detect">人脸识别</string>
+
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+
+</resources>

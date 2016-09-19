@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="faceppofflinesdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/libs/faceppofflinesdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

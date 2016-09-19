@@ -78,4 +78,4 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
 # 示例图
 
- ![demo](demo.png)
+ ![demo](demo.jpg)

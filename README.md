@@ -5,6 +5,32 @@ base on face++
 
 # Usage
 
+## gradle
+
+Step 1. Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+
+```
+
+Step 2. Add the dependency
+
+```
+dependencies {
+        compile 'com.github.hss01248:FaceDetect:1.0.0'
+}
+```
+
+
+
 ## manifest
 
 ```
@@ -46,13 +72,9 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 }
 ```
 
-拿到的脸部信息:
+## 拿到的脸部信息:
 
 {"face":[{"position":{"mouth_right":{"y":69.440208,"x":57.177778},"mouth_left":{"y":69.0975,"x":40.728519},"center":{"y":64.0625,"x":49.814815},"height":19.791667,"width":35.185185,"nose":{"y":64.674375,"x":50.537778},"eye_left":{"y":59.557083,"x":42.082963},"eye_right":{"y":60.006458,"x":57.913704}},"attribute":{"race":{"value":"White","confidence":93.4608},"gender":{"value":"Male","confidence":76.8741},"smiling":{"value":53.9131},"age":{"value":19,"range":5}},"tag":"","face_id":"4a7b9360f279c8bd2f48c982d1526f76"}],"session_id":"d83c80b7d13e4c96afdf635110add267","img_height":480,"img_width":270,"img_id":"289889896bc471fe935355eec718890a","url":null,"response_code":200}
-
-## gradle
-
-
 
 # 示例图
 

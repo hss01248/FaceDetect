@@ -223,7 +223,7 @@ public class MyImageFileUtils {
      * @author YOLANDA
      */
     public static void saveImageSendBroadcast(Activity activity,String filePath){
-        activity.  sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + filePath)));
+        activity.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + filePath)));
         //  com.hss01248.lib.activity. sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file://"+ Environment.getExternalStorageDirectory()+ filePath)));
     }
 

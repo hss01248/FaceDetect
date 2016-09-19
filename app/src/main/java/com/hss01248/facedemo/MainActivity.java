@@ -7,7 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSON;
 import com.hss01248.facedetect.activity.FaceTrackActivity;
+import com.hss01248.facedetect.bean.FaceInfo;
 
 
 public class MainActivity extends Activity {
@@ -47,7 +49,15 @@ public class MainActivity extends Activity {
             if (data != null){
                 String info = data.getStringExtra("info");
                 Log.e("info","info:"+info);
-                Toast.makeText(context,info,Toast.LENGTH_LONG).show();
+               // Toast.makeText(context,info,Toast.LENGTH_LONG).show();
+                FaceInfo faceInfo = JSON.parseObject(info,FaceInfo.class);
+                if (faceInfo != null && faceInfo.face.size()>0){
+                FaceInfo.FaceBean.AttributeBean faceBean =    faceInfo.face.get(0).attribute;
+                   String str = "性别: "+ faceBean.gender.value +" ,年龄: "+faceBean.age.value
+                           +"(±"+faceBean.age.range+"),\n人种: "+faceBean.race.value+", 笑值: "+faceBean.smiling.value;
+
+                    Toast.makeText(context,str,Toast.LENGTH_LONG).show();
+                }
 
 
             }

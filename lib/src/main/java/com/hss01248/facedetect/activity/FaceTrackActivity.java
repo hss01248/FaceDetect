@@ -143,7 +143,7 @@ public class FaceTrackActivity extends BaseActivity implements Callback, Preview
                         e.printStackTrace();
                     }
                 }else {
-                    Toast.makeText(FaceTrackActivity.this,"consumed",Toast.LENGTH_SHORT).show();
+                  //  Toast.makeText(FaceTrackActivity.this,"consumed",Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -173,7 +173,6 @@ public class FaceTrackActivity extends BaseActivity implements Callback, Preview
                            // loadingView.setVisibility(View.VISIBLE);
                         }
                     });
-
 
                     Bitmap bitmap =  MyBitmapUtils.byteToBitmap(data,480,640);
                     //然后将bitmap旋转270度

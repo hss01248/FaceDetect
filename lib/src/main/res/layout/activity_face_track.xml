@@ -7,17 +7,19 @@
     android:id="@+id/root"
     android:orientation="vertical" >
 
-    <include layout="@layout/app_base_toolbar" />
+
+
 
     <SurfaceView
         android:id="@+id/sv_preview_track"
-        android:layout_below="@+id/toolbar"
+        android:layout_below="@+id/titlebar"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <!-- android:layout_below="@+id/titlebar"-->
 
     <com.hss01248.facedetect.view.FaceMask
         android:id="@+id/fm_mask_track"
-        android:layout_below="@+id/toolbar"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -27,5 +29,10 @@
         android:layout_centerInParent="true"
         android:layout_width="150dp"
         android:layout_height="150dp"/>-->
+
+    <com.hss01248.titlebarlib.Titlebar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
 
 </RelativeLayout>

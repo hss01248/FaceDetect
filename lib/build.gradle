@@ -35,4 +35,5 @@ dependencies {
     compile 'com.github.ybq:Android-SpinKit:1.0.5'
     compile 'com.github.glassLake:DialogUtils:1.0.2'
    // compile 'com.github.glassLake:MyToast:1.0.1'
+    compile 'com.github.glassLake:titlebar:1.0.0'
 }

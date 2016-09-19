@@ -3,6 +3,18 @@ base on face++
 
 
 
+## 解决了的问题:
+
+ camera预览变形
+
+拍照后图片不正
+
+## 待解决
+
+与face++ api配合的多样化的动作.(目前只有扫脸获取人脸信息,后续需加上建组,人脸登录等)
+
+
+
 # Usage
 
 ## gradle
@@ -79,3 +91,17 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 # 示例图
 
  ![demo](demo.jpg)
+
+
+
+# blog
+
+[基于face++的人脸识别库的封装](http://www.jianshu.com/p/b55920dfdd14)
+
+
+
+#  Thanks
+
+[FaceDetection](https://github.com/sfsheng0322/FaceDetection)
+
+[Android-SpinKit](https://github.com/ybq/Android-SpinKit)
